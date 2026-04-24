@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMF | Contact & Devis Gratuit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ══ HEADER ══════════════════════════════════════════════ -->
+  <header id="accueil">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="img/bmf.svg" alt="Logo BMF"/>
+      </div>
+      <div class="menu-toggle" id="mobile-menu" aria-label="Ouvrir le menu" role="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#pourquoi">Pourquoi nous choisir</a></li>
+          <li><a href="index.html#prestations">Prestations</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html" class="nav-active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ══ HERO CONTACT ════════════════════════════════════════ -->
+  <section class="contact-hero">
+    <div class="contact-hero-overlay"></div>
+    <div class="contact-hero-content">
+      <p class="contact-hero-eyebrow">Contactez-nous</p>
+      <h1 class="contact-hero-title">Parlons de<br><span>votre projet.</span></h1>
+      <p class="contact-hero-sub">Étude gratuite • Réponse sous 24h • Devis sans engagement</p>
+    </div>
+    <div class="contact-hero-scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ══ SECTION CONTACT PRINCIPALE ═════════════════════════ -->
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <!-- ── Colonne gauche : infos ─────────────────────────── -->
+      <div class="contact-info">
+
+        <div class="contact-info-block">
+          <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <p class="contact-info-label">Téléphone</p>
+            <a href="tel:0600000000" class="contact-info-value">06 00 00 00 00</a>
+          </div>
+        </div>
+
+        <div class="contact-info-block">
+          <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <p class="contact-info-label">Email</p>
+            <a href="mailto:contact@bmf-construction.fr" class="contact-info-value">contact@bmf-construction.fr</a>
+          </div>
+        </div>
+
+        <div class="contact-info-block">
+          <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <p class="contact-info-label">Zone d'intervention</p>
+            <p class="contact-info-value">Oise (60) & Val-d'Oise (95)</p>
+          </div>
+        </div>
+
+        <div class="contact-info-block">
+          <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+          <div>
+            <p class="contact-info-label">Horaires</p>
+            <p class="contact-info-value">Lun – Ven : 09h00 – 18h00</p>
+          </div>
+        </div>
+
+        <!-- Engagements -->
+        <div class="contact-engagements">
+          <p class="contact-engagements-title">Nos engagements</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Étude de projet 100% gratuite</li>
+            <li><i class="fa-solid fa-check"></i> Réponse sous 24 heures</li>
+            <li><i class="fa-solid fa-check"></i> Devis détaillé sans engagement</li>
+            <li><i class="fa-solid fa-check"></i> Garantie décennale</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- ── Colonne droite : formulaire ───────────────────── -->
+      <div class="contact-form-wrapper">
+
+        <div class="contact-form-header">
+          <h2>Demande de devis gratuit</h2>
+          <p>Remplissez le formulaire ci-dessous, nous vous recontactons rapidement.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+
+          <!-- Nom / Prénom -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="nom" name="nom" placeholder="Dupont" autocomplete="family-name">
+              </div>
+              <span class="form-error" id="error-nom"></span>
+            </div>
+            <div class="form-group">
+              <label for="prenom">Prénom <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="prenom" name="prenom" placeholder="Jean" autocomplete="given-name">
+              </div>
+              <span class="form-error" id="error-prenom"></span>
+            </div>
+          </div>
+
+          <!-- Téléphone / Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telephone">Téléphone <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" autocomplete="tel">
+              </div>
+              <span class="form-error" id="error-telephone"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="jean@exemple.fr" autocomplete="email">
+              </div>
+              <span class="form-error" id="error-email"></span>
+            </div>
+          </div>
+
+          <!-- Type de projet -->
+          <div class="form-group">
+            <label for="type-projet">Type de projet <span class="required">*</span></label>
+            <div class="input-wrapper select-wrapper">
+              <i class="fa-solid fa-hard-hat"></i>
+              <select id="type-projet" name="type-projet">
+                <option value="" disabled selected>Sélectionnez votre projet</option>
+                <option value="extension">Extension de maison</option>
+                <option value="renovation">Rénovation générale</option>
+                <option value="carrelage">Carrelage</option>
+                <option value="ravalement">Ravalement de façade</option>
+                <option value="parement">Plaquettes & Parements</option>
+                <option value="permis">Permis de construire</option>
+                <option value="autre">Autre projet</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+            <span class="form-error" id="error-type-projet"></span>
+          </div>
+
+          <!-- Description -->
+          <div class="form-group">
+            <label for="description">Description du projet <span class="required">*</span></label>
+            <div class="input-wrapper textarea-wrapper">
+              <textarea id="description" name="description" rows="5" placeholder="Décrivez votre projet : surface, localisation, contraintes particulières, délai souhaité..."></textarea>
+            </div>
+            <div class="form-hint">
+              <span class="form-error" id="error-description"></span>
+              <span class="char-counter"><span id="char-count">0</span> / 500 caractères</span>
+            </div>
+          </div>
+
+          <!-- Consentement RGPD -->
+          <div class="form-group form-group-check">
+            <label class="check-label">
+              <input type="checkbox" id="rgpd" name="rgpd">
+              <span class="checkmark"></span>
+              <span>J'accepte que mes données soient utilisées pour traiter ma demande. <span class="required">*</span></span>
+            </label>
+            <span class="form-error" id="error-rgpd"></span>
+          </div>
+
+          <!-- Bouton submit -->
+          <button type="submit" class="btn-submit" id="btn-submit">
+            <span class="btn-submit-text">
+              <i class="fa-solid fa-paper-plane"></i>
+              Envoyer ma demande
+            </span>
+            <span class="btn-submit-loading" style="display:none;">
+              <i class="fa-solid fa-spinner fa-spin"></i>
+              Envoi en cours...
+            </span>
+          </button>
+
+        </form>
+
+        <!-- Message de succès -->
+        <div class="form-success" id="form-success" style="display:none;">
+          <div class="form-success-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>Message envoyé !</h3>
+          <p>Merci <strong id="success-prenom"></strong>, votre demande a bien été reçue. Nous vous recontactons sous 24 heures.</p>
+          <button class="btn-reset" onclick="resetForm()">Envoyer une autre demande</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>BMF</h3>
+        <p>Expertise en construction, extension et rénovation dans l'Oise et le Val-d'Oise. Votre projet, notre engagement professionnel.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#pourquoi">Pourquoi nous choisir</a></li>
+          <li><a href="index.html#prestations">Prestations</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact & Infos</h3>
+        <p><i class="fa-solid fa-phone"></i> 06 XX XX XX XX</p>
+        <p><i class="fa-solid fa-envelope"></i> contact@bmf-construction.fr</p>
+        <p><i class="fa-solid fa-location-dot"></i> <strong>Zone :</strong> Oise & Val-d'Oise</p>
+        <div style="margin-top: 1rem;">
+          <p><i class="fa-solid fa-clock"></i> <strong>Horaires :</strong></p>
+          <p style="font-size: 0.9rem; margin-bottom: 0;">Lun - Ven : 09h00 - 18h00</p>
+          <p style="font-size: 0.9rem;">Sam - Dim : Fermé</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BMF Construction — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- ══ SCRIPTS ══════════════════════════════════════════════ -->
+  <script>
+    /* ── Menu burger ── */
+    const burger = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    burger.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+      burger.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('active');
+        burger.classList.remove('open');
+      });
+    });
+
+    /* ── Compteur de caractères ── */
+    const desc = document.getElementById('description');
+    const counter = document.getElementById('char-count');
+    desc.addEventListener('input', function () {
+      const len = this.value.length;
+      counter.textContent = len;
+      if (len > 500) {
+        counter.style.color = '#e74c3c';
+      } else if (len > 400) {
+        counter.style.color = '#C08552';
+      } else {
+        counter.style.color = '';
+      }
+    });
+
+    /* ── Validation en temps réel ── */
+    function showError(id, msg) {
+      const el = document.getElementById('error-' + id);
+      const input = document.getElementById(id) || document.querySelector('[name="' + id + '"]');
+      if (el) el.textContent = msg;
+      if (input && input.closest) {
+        const wrapper = input.closest('.form-group');
+        if (wrapper) {
+          wrapper.classList.toggle('has-error', !!msg);
+          wrapper.classList.toggle('is-valid', !msg && input.value !== '');
+        }
+      }
+    }
+
+    function validateField(id) {
+      const el = document.getElementById(id);
+      if (!el) return true;
+      const val = el.value.trim();
+
+      if (id === 'nom' || id === 'prenom') {
+        if (!val) { showError(id, 'Ce champ est obligatoire.'); return false; }
+        if (val.length < 2) { showError(id, 'Minimum 2 caractères.'); return false; }
+        showError(id, ''); return true;
+      }
+      if (id === 'telephone') {
+        const cleaned = val.replace(/\s/g, '');
+        if (!val) { showError(id, 'Ce champ est obligatoire.'); return false; }
+        if (!/^(\+33|0)[0-9]{9}$/.test(cleaned)) { showError(id, 'Numéro invalide (ex: 06 00 00 00 00).'); return false; }
+        showError(id, ''); return true;
+      }
+      if (id === 'email') {
+        if (!val) { showError(id, 'Ce champ est obligatoire.'); return false; }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) { showError(id, 'Adresse email invalide.'); return false; }
+        showError(id, ''); return true;
+      }
+      if (id === 'type-projet') {
+        if (!val) { showError(id, 'Veuillez sélectionner un type de projet.'); return false; }
+        showError(id, ''); return true;
+      }
+      if (id === 'description') {
+        if (!val) { showError(id, 'Veuillez décrire votre projet.'); return false; }
+        if (val.length < 20) { showError(id, 'Merci d\'en dire un peu plus (min. 20 caractères).'); return false; }
+        if (val.length > 500) { showError(id, 'Maximum 500 caractères.'); return false; }
+        showError(id, ''); return true;
+      }
+      return true;
+    }
+
+    /* Live validation on blur */
+    ['nom','prenom','telephone','email','type-projet','description'].forEach(function(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('blur', function() { validateField(id); });
+        el.addEventListener('input', function() {
+          if (el.closest('.form-group').classList.contains('has-error')) {
+            validateField(id);
+          }
+        });
+      }
+    });
+
+    /* ── Soumission du formulaire ── */
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const fields = ['nom','prenom','telephone','email','type-projet','description'];
+      let valid = true;
+      fields.forEach(function(id) {
+        if (!validateField(id)) valid = false;
+      });
+
+      // RGPD check
+      const rgpd = document.getElementById('rgpd');
+      if (!rgpd.checked) {
+        document.getElementById('error-rgpd').textContent = 'Vous devez accepter pour continuer.';
+        valid = false;
+      } else {
+        document.getElementById('error-rgpd').textContent = '';
+      }
+
+      if (!valid) return;
+
+      // Simulation envoi
+      const btn = document.getElementById('btn-submit');
+      btn.querySelector('.btn-submit-text').style.display = 'none';
+      btn.querySelector('.btn-submit-loading').style.display = 'inline-flex';
+      btn.disabled = true;
+
+      setTimeout(function() {
+        document.getElementById('contact-form').style.display = 'none';
+        const successDiv = document.getElementById('form-success');
+        successDiv.style.display = 'flex';
+        document.getElementById('success-prenom').textContent = document.getElementById('prenom').value;
+        // Scroll vers le message de succès
+        successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 1800);
+    });
+
+    function resetForm() {
+      document.getElementById('contact-form').reset();
+      document.getElementById('contact-form').style.display = 'block';
+      document.getElementById('form-success').style.display = 'none';
+      document.getElementById('char-count').textContent = '0';
+      document.querySelectorAll('.form-group').forEach(function(g) {
+        g.classList.remove('has-error','is-valid');
+      });
+      const btn = document.getElementById('btn-submit');
+      btn.querySelector('.btn-submit-text').style.display = 'inline-flex';
+      btn.querySelector('.btn-submit-loading').style.display = 'none';
+      btn.disabled = false;
+    }
+  </script>
+
+</body>
+</html>
