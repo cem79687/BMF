@@ -1,0 +1,6 @@
+# BMF Construction — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bmf-construction.fr/sitemap.xml

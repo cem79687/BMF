@@ -231,44 +231,47 @@ nav { display: flex; align-items: center; }
   padding: 3rem 5%;
 }
 .stats-band-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  justify-content: center;
   gap: 0;
   max-width: 900px;
   margin: 0 auto;
 }
 .stats-band-item {
-  flex: 1;
   text-align: center;
-  padding: 0 2rem;
+  padding: 1.5rem 1rem;
+  position: relative;
+}
+.stats-band-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 25%; height: 50%;
+  width: 1px;
+  background: rgba(255,255,255,0.12);
 }
 .stats-band-item p {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   color: rgba(255,255,255,0.55);
-  margin-top: 4px;
+  margin-top: 6px;
+  line-height: 1.4;
 }
 .stat-number {
   font-family: var(--font-logo);
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 800;
   color: var(--accent-terra);
   line-height: 1;
 }
 .stat-unit {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: rgba(255,255,255,0.7);
-  margin-left: 4px;
+  margin-left: 3px;
 }
-.stats-band-sep {
-  width: 1px;
-  height: 60px;
-  background: rgba(255,255,255,0.12);
-  flex-shrink: 0;
-}
+.stats-band-sep { display: none; }
 
 /* ── Section À propos ─────────────────────────────────────── */
 #apropos {
@@ -700,9 +703,10 @@ a.contact-info-value:hover { color: var(--accent-terra); }
   .contact-info { position: static; }
   .form-row { grid-template-columns: 1fr; }
   .cta-band-inner { flex-direction: column; text-align: center; }
-  .stats-band-grid { flex-wrap: wrap; }
-  .stats-band-sep { display: none; }
-  .stats-band-item { flex: 0 0 45%; }
+  .stats-band-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-band-item:not(:last-child)::after { display: none; }
+  .stats-band-item { padding: 1.25rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .stats-band-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.08); }
   .section-header { flex-direction: column; align-items: flex-start; }
 }
 
@@ -718,5 +722,5 @@ a.contact-info-value:hover { color: var(--accent-terra); }
   .contact-form-wrapper { padding: 1.5rem; }
   .apropos-title { font-size: 1.6rem; }
   .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
-  .stats-band-item { flex: 0 0 100%; }
+  .stat-number { font-size: 2.2rem; }
 }
