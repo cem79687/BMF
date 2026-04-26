@@ -3,123 +3,247 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMF | Maçonnerie & Expertise Luxe</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <title>BMF Construction | Nos Réalisations — Oise & Val-d'Oise</title>
+  <meta name="description" content="Découvrez les réalisations de BMF Construction : extensions, rénovations, carrelages et ravalements dans l'Oise et le Val-d'Oise.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ══ HEADER ══════════════════════════════════════════════ -->
   <header id="accueil">
     <div class="container nav-container">
       <div class="logo">
-        <img src="img/bmf.svg" alt="Logo BMF"/>
+        <img src="img/bmf.svg" alt="Logo BMF Construction" loading="eager"/>
+      </div>
+      <div class="menu-toggle" id="mobile-menu" aria-label="Ouvrir le menu" role="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
       <nav>
-        <ul class="nav-links">
-  <li><a href="index.html">Accueil</a></li>
-  <li><a href="index.html#apropos">À propos</a></li>
-  <li><a href="index.html#services">Services</a></li>
-  <li><a href="index.html#pourquoi">Pourquoi nous choisir</a></li>
-  <li><a href="index.html#prestations">Prestations</a></li>
-  
-  <li><a href="realisations.html">Réalisations</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li><a href="index.html#prestations">Prestations</a></li>
+          <li><a href="realisations.html" class="nav-active">Réalisations</a></li>
+          <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
+        </ul>
       </nav>
     </div>
-  </header>    
-          
+  </header>
 
-  <body>
-  <section id="realisations" style="padding: 6rem 5%;">
-    <div class="container">
-      <h2 class="apropos-title" style="text-align: center;">Nos Réalisations</h2>
-      <p style="text-align: center; margin-bottom: 3rem;">Découvrez nos chantiers dans l'Oise et le Val-d'Oise.</p>
-      
-      <div class="filters" style="text-align: center; margin-bottom: 2rem;">
-        <button class="filter-btn active" data-filter="all">Tous</button>
-        <button class="filter-btn" data-filter="extension">Extension</button>
-        <button class="filter-btn" data-filter="renovation">Rénovation</button>
-        <button class="filter-btn" data-filter="carrelage">Carrelage</button>
-        <button class="filter-btn" data-filter="plaquette">Plaquette de Parment</button>
-      </div>
-      </div>
-      </div>
-
-      <div class="gallery">
-        <div class="gallery-item extension"><img src="img/ext1.jpg" alt="Extension"></div>
-        <div class="gallery-item carrelage"><img src="img/car20.jpg" alt="Carrelage"></div>
-        <div class="gallery-item renovation"><img src="img/br2.jpg" alt="Rénovation"></div>
-      </div>
+  <!-- ══ HERO RÉALISATIONS ════════════════════════════════════ -->
+  <section class="contact-hero" style="background-image: url(img/ext1.jpg);">
+    <div class="contact-hero-overlay"></div>
+    <div class="contact-hero-content">
+      <p class="contact-hero-eyebrow">Portfolio</p>
+      <h1 class="contact-hero-title">Nos<br><span>réalisations.</span></h1>
+      <p class="contact-hero-sub">Extensions • Rénovations • Carrelages • Ravalements</p>
     </div>
   </section>
 
+  <!-- ══ GALERIE ══════════════════════════════════════════════ -->
+  <section id="realisations" class="realisations-section">
+    <div class="container">
 
-<footer id="footer">
-  <div class="container footer-grid">
-    
-    <div class="footer-col">
-      <h3>BMF</h3>
-      <p>Expertise en construction, extension et rénovation dans l'Oise et le Val-d'Oise. Votre projet, notre engagement professionnel.</p>
+      <!-- Filtres -->
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fa-solid fa-border-all"></i> Tous
+        </button>
+        <button class="filter-btn" data-filter="extension">
+          <i class="fa-solid fa-house-chimney"></i> Extension
+        </button>
+        <button class="filter-btn" data-filter="renovation">
+          <i class="fa-solid fa-wrench"></i> Rénovation
+        </button>
+        <button class="filter-btn" data-filter="carrelage">
+          <i class="fa-solid fa-border-all"></i> Carrelage
+        </button>
+        <button class="filter-btn" data-filter="ravalement">
+          <i class="fa-solid fa-building"></i> Ravalement
+        </button>
+      </div>
+
+      <!-- Grille galerie -->
+      <div class="gallery-grid reveal">
+
+        <div class="gallery-card extension" data-category="extension">
+          <div class="gallery-card-img">
+            <img src="img/ext1.jpg" alt="Extension de maison — Oise" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Extension</span>
+              <p>Extension de 35m² — Beauvais (60)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-card carrelage" data-category="carrelage">
+          <div class="gallery-card-img">
+            <img src="img/car20.jpg" alt="Pose de carrelage — Val-d'Oise" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Carrelage</span>
+              <p>Carrelage salon & terrasse — Cergy (95)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-card renovation" data-category="renovation">
+          <div class="gallery-card-img">
+            <img src="img/br2.jpg" alt="Rénovation intérieure — Oise" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Rénovation</span>
+              <p>Rénovation complète — Senlis (60)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-card extension" data-category="extension">
+          <div class="gallery-card-img">
+            <img src="img/ext10.jpg" alt="Extension maison — Val-d'Oise" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Extension</span>
+              <p>Extension + terrasse — Pontoise (95)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-card renovation" data-category="renovation">
+          <div class="gallery-card-img">
+            <img src="img/br1.jpg" alt="Rénovation façade — Oise" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Rénovation</span>
+              <p>Rénovation façade — Compiègne (60)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-card carrelage" data-category="carrelage">
+          <div class="gallery-card-img">
+            <img src="img/car20.jpg" alt="Carrelage extérieur — Oise" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Carrelage</span>
+              <p>Carrelage extérieur — Creil (60)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Message si aucun résultat -->
+      <p class="gallery-empty" id="gallery-empty" style="display:none;">
+        <i class="fa-solid fa-images"></i><br>
+        Aucune réalisation dans cette catégorie pour le moment.
+      </p>
     </div>
+  </section>
 
-    <div class="footer-col">
-      <h3>Navigation</h3>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pourquoi">Pourquoi nous choisir</a></li>
-        <li><a href="#prestations">Prestations</a></li>
-        <li><a href="#realisations">Réalisations</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <!-- ══ CTA BANDEAU ══════════════════════════════════════════ -->
+  <section class="cta-band reveal">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Votre projet mérite le meilleur.</h2>
+        <p>Étude gratuite • Réponse sous 24h • Devis sans engagement</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-large">
+        <i class="fa-solid fa-envelope"></i> Demander un devis gratuit
+      </a>
     </div>
+  </section>
 
-    <div class="footer-col">
-      <h3>Contact & Infos</h3>
-      <p><i class="fa-solid fa-phone"></i> 06 XX XX XX XX</p>
-      <p><i class="fa-solid fa-envelope"></i> contact@bmf-construction.fr</p>
-      <p><i class="fa-solid fa-location-dot"></i> <strong>Zone :</strong> Oise & Val-d'Oise</p>
-      
-      <div style="margin-top: 1rem;">
-        <p><i class="fa-solid fa-clock"></i> <strong>Horaires :</strong></p>
-        <p style="font-size: 0.9rem; margin-bottom: 0;">Lun - Ven : 09h00 - 18h00</p>
-        <p style="font-size: 0.9rem;">Sam - Dim : Fermé</p>
+  <!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <img src="img/bmf.svg" alt="Logo BMF" class="footer-logo" loading="lazy">
+        <p>Expertise en maçonnerie, extension et rénovation dans l'Oise et le Val-d'Oise.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook BMF"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram BMF"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li><a href="index.html#prestations">Prestations</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html">Contact & Devis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact & Infos</h3>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:0600000000">06 00 00 00 00</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:contact@bmf-construction.fr">contact@bmf-construction.fr</a></p>
+        <p><i class="fa-solid fa-location-dot"></i> Oise (60) & Val-d'Oise (95)</p>
+        <p><i class="fa-solid fa-clock"></i> Lun – Ven : 09h00 – 18h00</p>
       </div>
     </div>
-  </div>
-  
-  <div class="footer-bottom">
-    <p>&copy; 2026 BMF Construction - Tous droits réservés.</p>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BMF Construction — Tous droits réservés.</p>
+      <p><a href="#">Mentions légales</a></p>
+    </div>
+  </footer>
 
-<script>
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const galleryItems = document.querySelectorAll('.gallery-item');
+  <a href="contact.html" class="cta-float" aria-label="Demander un devis">
+    <i class="fa-solid fa-envelope"></i>
+    <span>Devis gratuit</span>
+  </a>
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Enlever la classe 'active' de tous les boutons
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      // Ajouter 'active' au bouton cliqué
-      button.classList.add('active');
-
-      const filter = button.getAttribute('data-filter');
-
-      galleryItems.forEach(item => {
-        if (filter === 'all' || item.classList.contains(filter)) {
-          item.style.display = 'block'; // Affiche l'élément
-        } else {
-          item.style.display = 'none'; // Cache l'élément
-        }
+  <script>
+    /* ── Burger ── */
+    const burger = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    burger.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+      burger.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function(l) {
+      l.addEventListener('click', function() {
+        navLinks.classList.remove('active');
+        burger.classList.remove('open');
       });
     });
-  });
-</script>
 
+    /* ── Reveal ── */
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('revealed'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
 
-  </body>
+    /* ── Filtres galerie ── */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.gallery-card');
+    const emptyMsg = document.getElementById('gallery-empty');
+
+    filterBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        filterBtns.forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        let visible = 0;
+        cards.forEach(function(card) {
+          if (filter === 'all' || card.classList.contains(filter)) {
+            card.style.display = '';
+            card.style.animation = 'fadeInUp 0.4s ease forwards';
+            visible++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        emptyMsg.style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+
+    /* ── CTA flottant ── */
+    const ctaFloat = document.querySelector('.cta-float');
+    window.addEventListener('scroll', function() {
+      ctaFloat.classList.toggle('visible', window.scrollY > 400);
+    });
+  </script>
+
+</body>
+</html>

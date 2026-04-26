@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMF | Maçonnerie & Expertise Luxe</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>BMF Construction | Maçonnerie, Extension & Rénovation — Oise & Val-d'Oise</title>
+  <meta name="description" content="BMF Construction : artisan maçon depuis 15 ans dans l'Oise et le Val-d'Oise. Extension, rénovation, carrelage, ravalement. Devis gratuit sous 24h.">
+  <meta property="og:title" content="BMF Construction | Maçonnerie & Rénovation">
+  <meta property="og:description" content="Artisan maçon depuis 15 ans dans l'Oise et Val-d'Oise. Extension, rénovation, carrelage, ravalement. Devis gratuit.">
+  <meta property="og:image" content="img/ext10.jpg">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://bmf-construction.fr/">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,31 +19,23 @@
   <!-- ══ HEADER ══════════════════════════════════════════════ -->
   <header id="accueil">
     <div class="container nav-container">
-
       <div class="logo">
-        <img src="img/bmf.svg" alt="Logo BMF"/>
+        <img src="img/bmf.svg" alt="Logo BMF Construction" loading="eager"/>
       </div>
-
-      <!-- Burger (visible uniquement sur mobile) -->
       <div class="menu-toggle" id="mobile-menu" aria-label="Ouvrir le menu" role="button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-
-      <!-- Navigation -->
       <nav>
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html" class="nav-active">Accueil</a></li>
           <li><a href="index.html#apropos">À propos</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#pourquoi">Pourquoi nous choisir</a></li>
           <li><a href="index.html#prestations">Prestations</a></li>
           <li><a href="realisations.html">Réalisations</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
 
@@ -45,18 +43,52 @@
   <section class="hero" style="background-image: url(img/ext10.jpg);">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <div class="location-badge">
-        <span>📍 Beauvais • Oise • Val d'Oise</span>
+      <div class="location-badge reveal">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Beauvais • Oise • Val d'Oise</span>
       </div>
-      <h1>L'excellence <br> structurelle.</h1>
-      <p class="hero-text">Maçonnerie, ravalement, carrelage. Nous sculptons votre habitat avec la précision d'un artisan et l'ambition du luxe.</p>
-      <div class="hero-buttons">
+      <h1 class="reveal">L'excellence<br><span class="hero-accent">structurelle.</span></h1>
+      <p class="hero-text reveal">Maçonnerie, ravalement, carrelage. Nous sculptons votre habitat avec la précision d'un artisan et l'ambition du luxe.</p>
+      <div class="hero-buttons reveal">
         <a href="contact.html" class="btn btn-primary">
           <i class="fa-solid fa-envelope"></i> Demander un devis
         </a>
-        <a href="tel:0000000000" class="btn btn-secondary">
+        <a href="tel:0600000000" class="btn btn-secondary">
           <i class="fa-solid fa-phone"></i> 06 00 00 00 00
         </a>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="hero-scroll-indicator">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ══ BANDEAU CHIFFRES CLÉS ════════════════════════════════ -->
+  <section class="stats-band">
+    <div class="container stats-band-grid">
+      <div class="stats-band-item reveal">
+        <span class="stat-number" data-target="15">0</span>
+        <span class="stat-unit">ans</span>
+        <p>d'expérience</p>
+      </div>
+      <div class="stats-band-sep"></div>
+      <div class="stats-band-item reveal">
+        <span class="stat-number" data-target="5">0</span>
+        <span class="stat-unit">métiers</span>
+        <p>maîtrisés</p>
+      </div>
+      <div class="stats-band-sep"></div>
+      <div class="stats-band-item reveal">
+        <span class="stat-number" data-target="2">0</span>
+        <span class="stat-unit">dép.</span>
+        <p>couverts</p>
+      </div>
+      <div class="stats-band-sep"></div>
+      <div class="stats-band-item reveal">
+        <span class="stat-number" data-target="100">0</span>
+        <span class="stat-unit">%</span>
+        <p>devis gratuits</p>
       </div>
     </div>
   </section>
@@ -64,10 +96,9 @@
   <!-- ══ À PROPOS ════════════════════════════════════════════ -->
   <section id="apropos">
     <div class="apropos-inner">
-
-      <div class="apropos-img-col">
+      <div class="apropos-img-col reveal">
         <div class="apropos-img-wrap">
-          <img src="img/ext10.jpg" alt="Chantier BMF — maçonnerie et ravalement">
+          <img src="img/ext10.jpg" alt="Chantier BMF — maçonnerie et ravalement" loading="lazy">
           <div class="apropos-badge">
             <p>Études<br>gratuites</p>
           </div>
@@ -77,67 +108,20 @@
           </div>
         </div>
       </div>
-
-      <div class="apropos-text-col">
+      <div class="apropos-text-col reveal">
         <p class="apropos-eyebrow">À propos de nous</p>
         <h2 class="apropos-title">15 ans d'expérience dans l'Oise et le Val-d'Oise</h2>
-        <p class="apropos-intro">Je m'appelle <strong>[Ton Prénom]</strong>, fondateur de <strong>BMF</strong>. Avec 15 ans d'expérience, j'ai créé BMF avec une seule conviction : offrir à chaque client un interlocuteur de confiance, disponible et transparent.</p>
-
+        <p class="apropos-intro">Je m'appelle <strong>Théo</strong>, fondateur de <strong>BMF Construction</strong>. Depuis 15 ans, j'interviens dans l'Oise et le Val-d'Oise avec une seule conviction : offrir à chaque client un interlocuteur de confiance, disponible et transparent du premier contact jusqu'à la livraison du chantier.</p>
+        <p class="apropos-intro">Que vous ayez un projet d'extension, de rénovation ou de ravalement, nous vous accompagnons à chaque étape — avec sérieux, rigueur et respect de votre budget.</p>
         <ul class="apropos-checks">
-          <li><span class="apropos-check-icon"><i class="fa fa-check"></i></span>Délais tenus</li>
-          <li><span class="apropos-check-icon"><i class="fa fa-check"></i></span>À votre écoute</li>
-          <li><span class="apropos-check-icon"><i class="fa fa-check"></i></span>Normes respectées</li>
+          <li><span class="apropos-check-icon"><i class="fa fa-check"></i></span>Délais toujours tenus</li>
+          <li><span class="apropos-check-icon"><i class="fa fa-check"></i></span>À votre écoute du début à la fin</li>
+          <li><span class="apropos-check-icon"><i class="fa fa-check"></i></span>Normes et réglementations respectées</li>
+          <li><span class="apropos-check-icon"><i class="fa fa-check"></i></span>Garantie décennale</li>
         </ul>
-
-        <div class="apropos-stats">
-          <div class="apropos-stat"><h3>15</h3><p>ANS</p></div>
-          <div class="apropos-stat"><h3>X</h3><p>MÉTIERS</p></div>
-          <div class="apropos-stat"><h3>2</h3><p>DÉPART.</p></div>
-        </div>
-
         <a href="contact.html" class="btn btn-primary">
-          <i class="fa-solid fa-envelope"></i> Demander un devis
+          <i class="fa-solid fa-envelope"></i> Demander un devis gratuit
         </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══ SERVICES ════════════════════════════════════════════ -->
-  <section id="services">
-    <div class="container">
-      <p class="apropos-eyebrow" style="text-align: center;">Nos solutions</p>
-      <h2 class="apropos-title" style="text-align: center; margin-bottom: 4rem;">Accompagnement de A à Z</h2>
-
-      <div class="services-grid services-grid-4">
-        <div class="service-card service-01">
-          <div class="service-card-bg"></div>
-          <div class="service-card-content">
-            <h3>01. Conception des plans</h3>
-            <p>Étude personnalisée et modélisation de votre projet selon vos besoins.</p>
-          </div>
-        </div>
-        <div class="service-card service-02">
-          <div class="service-card-bg"></div>
-          <div class="service-card-content">
-            <h3>02. Permis de construire</h3>
-            <p>Gestion complète du dossier administratif pour une sérénité totale.</p>
-          </div>
-        </div>
-        <div class="service-card service-03">
-          <div class="service-card-bg"></div>
-          <div class="service-card-content">
-            <h3>03. Extension & Rénovation</h3>
-            <p>Expertise technique pour agrandir ou transformer votre habitat.</p>
-          </div>
-        </div>
-        <div class="service-card service-04">
-          <div class="service-card-bg"></div>
-          <div class="service-card-content">
-            <h3>04. Aménagement</h3>
-            <p>Optimisation de vos espaces intérieurs et extérieurs avec précision.</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -145,119 +129,245 @@
   <!-- ══ POURQUOI NOUS ════════════════════════════════════════ -->
   <section id="pourquoi">
     <div class="container pourquoi-container">
-
-      <div class="pourquoi-image-wrapper">
-        <div class="apropos-badge">
-          <p>ÉTUDES<br>GRATUITES</p>
-        </div>
-        <img src="img/ext10.jpg" alt="Excellence technique BMF">
-      </div>
-
-      <div class="pourquoi-content">
+      <div class="pourquoi-content reveal">
         <p class="apropos-eyebrow">La signature BMF</p>
         <h2 class="apropos-title">Pourquoi nous faire confiance ?</h2>
-        <p class="pourquoi-text">Choisir BMF, c'est opter pour une approche où l'excellence technique rencontre la sérénité. Dans l'Oise et le Val-d'Oise, nous nous engageons à transformer vos projets en réalisations durables, avec une transparence totale sur les étapes, les coûts et les délais.</p>
+        <p class="pourquoi-text">Choisir BMF, c'est opter pour une approche où l'excellence technique rencontre la transparence. Nous nous engageons à transformer vos projets en réalisations durables, avec un suivi rigoureux à chaque étape.</p>
         <ul class="pourquoi-list-v2">
-          <li><i class="fa-solid fa-check-circle"></i> Suivi rigoureux des travaux</li>
-          <li><i class="fa-solid fa-check-circle"></i> Délais respectés</li>
-          <li><i class="fa-solid fa-check-circle"></i> Garantie décennale</li>
-          <li><i class="fa-solid fa-check-circle"></i> Étude de faisabilité offerte</li>
+          <li><span class="pourquoi-icon"><i class="fa-solid fa-shield-halved"></i></span><div><strong>Garantie décennale</strong><p>Votre investissement est protégé sur le long terme.</p></div></li>
+          <li><span class="pourquoi-icon"><i class="fa-solid fa-clock"></i></span><div><strong>Délais respectés</strong><p>Un planning précis, tenu à chaque étape du chantier.</p></div></li>
+          <li><span class="pourquoi-icon"><i class="fa-solid fa-comments"></i></span><div><strong>Suivi personnalisé</strong><p>Un interlocuteur unique, disponible et réactif.</p></div></li>
+          <li><span class="pourquoi-icon"><i class="fa-solid fa-file-invoice"></i></span><div><strong>Devis détaillé offert</strong><p>Étude de faisabilité et devis précis, sans engagement.</p></div></li>
         </ul>
       </div>
-
+      <div class="pourquoi-image-wrapper reveal">
+        <img src="img/br1.jpg" alt="Excellence technique BMF" loading="lazy">
+        <div class="pourquoi-badge">
+          <p class="pourquoi-badge-num">15</p>
+          <p class="pourquoi-badge-label">ans d'expertise</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ══ PRESTATIONS ══════════════════════════════════════════ -->
   <section id="prestations">
     <div class="container">
-      <p class="apropos-eyebrow" style="text-align: center;">Notre savoir-faire</p>
-      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3rem;">
+      <div class="section-header reveal">
+        <p class="apropos-eyebrow">Notre savoir-faire</p>
         <h2 class="apropos-title">Nos prestations techniques</h2>
-        <a href="realisations.html" class="btn btn-secondary">Voir nos réalisations</a>
+        <a href="realisations.html" class="btn btn-secondary">Voir nos réalisations <i class="fa-solid fa-arrow-right"></i></a>
       </div>
-
-      <div class="services-grid services-grid-3">
+      <div class="services-grid services-grid-3 reveal">
         <div class="service-card prest-01">
           <div class="service-card-bg"></div>
-          <div class="service-card-content"><h3>Extension</h3><p>Agrandissez votre espace de vie avec des structures durables et sur-mesure.</p></div>
+          <div class="service-card-content">
+            <div class="service-card-icon"><i class="fa-solid fa-house-chimney"></i></div>
+            <h3>Extension</h3>
+            <p>Agrandissez votre espace de vie avec des structures durables et sur-mesure.</p>
+          </div>
         </div>
         <div class="service-card prest-02">
           <div class="service-card-bg"></div>
-          <div class="service-card-content"><h3>Rénovation</h3><p>Redonnez vie à votre habitat grâce à une expertise technique complète.</p></div>
+          <div class="service-card-content">
+            <div class="service-card-icon"><i class="fa-solid fa-wrench"></i></div>
+            <h3>Rénovation</h3>
+            <p>Redonnez vie à votre habitat grâce à une expertise technique complète.</p>
+          </div>
         </div>
         <div class="service-card prest-03">
           <div class="service-card-bg"></div>
-          <div class="service-card-content"><h3>Carrelage</h3><p>Pose précise de revêtements pour des finitions intérieures et extérieures.</p></div>
+          <div class="service-card-content">
+            <div class="service-card-icon"><i class="fa-solid fa-border-all"></i></div>
+            <h3>Carrelage</h3>
+            <p>Pose précise de revêtements pour des finitions intérieures et extérieures.</p>
+          </div>
         </div>
         <div class="service-card prest-04">
           <div class="service-card-bg"></div>
-          <div class="service-card-content"><h3>Ravalement</h3><p>Protection et esthétique de vos façades pour valoriser votre patrimoine.</p></div>
+          <div class="service-card-content">
+            <div class="service-card-icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Ravalement</h3>
+            <p>Protection et esthétique de vos façades pour valoriser votre patrimoine.</p>
+          </div>
         </div>
         <div class="service-card prest-05">
           <div class="service-card-bg"></div>
-          <div class="service-card-content"><h3>Plaquettes & Parements</h3><p>Apportez du caractère et du relief à vos murs avec nos solutions de parement.</p></div>
+          <div class="service-card-content">
+            <div class="service-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Plaquettes & Parements</h3>
+            <p>Apportez du caractère et du relief à vos murs avec nos solutions de parement.</p>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ══ TÉMOIGNAGES ══════════════════════════════════════════ -->
+  <section id="temoignages">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="apropos-eyebrow">Ils nous font confiance</p>
+        <h2 class="apropos-title">Ce que disent nos clients</h2>
+      </div>
+      <div class="temoignages-grid reveal">
+        <div class="temoignage-card">
+          <div class="temoignage-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="temoignage-text">« Travail impeccable pour notre extension de 40m². Délais respectés, équipe sérieuse et à l'écoute. Je recommande sans hésiter. »</p>
+          <div class="temoignage-author">
+            <div class="temoignage-avatar">ML</div>
+            <div>
+              <strong>Marie L.</strong>
+              <span>Extension maison — Beauvais (60)</span>
+            </div>
+          </div>
+        </div>
+        <div class="temoignage-card">
+          <div class="temoignage-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="temoignage-text">« Ravalement de façade réalisé avec soin. Très bon rapport qualité-prix, devis clair et détaillé. Aucune mauvaise surprise. »</p>
+          <div class="temoignage-author">
+            <div class="temoignage-avatar">PD</div>
+            <div>
+              <strong>Pierre D.</strong>
+              <span>Ravalement de façade — Cergy (95)</span>
+            </div>
+          </div>
+        </div>
+        <div class="temoignage-card">
+          <div class="temoignage-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="temoignage-text">« Carrelage de la terrasse et du salon, résultat magnifique. Théo est professionnel, ponctuel et le travail est vraiment soigné. »</p>
+          <div class="temoignage-author">
+            <div class="temoignage-avatar">SC</div>
+            <div>
+              <strong>Sophie C.</strong>
+              <span>Carrelage intérieur/extérieur — Senlis (60)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA BANDEAU ══════════════════════════════════════════ -->
+  <section class="cta-band reveal">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Votre projet mérite le meilleur.</h2>
+        <p>Étude gratuite • Réponse sous 24h • Devis sans engagement</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-large">
+        <i class="fa-solid fa-envelope"></i> Demander un devis gratuit
+      </a>
     </div>
   </section>
 
   <!-- ══ FOOTER ═══════════════════════════════════════════════ -->
   <footer id="footer">
     <div class="container footer-grid">
-
       <div class="footer-col">
-        <h3>BMF</h3>
-        <p>Expertise en construction, extension et rénovation dans l'Oise et le Val-d'Oise. Votre projet, notre engagement professionnel.</p>
+        <img src="img/bmf.svg" alt="Logo BMF" class="footer-logo" loading="lazy">
+        <p>Expertise en maçonnerie, extension et rénovation dans l'Oise et le Val-d'Oise. Votre projet, notre engagement professionnel.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook BMF"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram BMF"><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
-
       <div class="footer-col">
         <h3>Navigation</h3>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="index.html#apropos">À propos</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#pourquoi">Pourquoi nous choisir</a></li>
           <li><a href="index.html#prestations">Prestations</a></li>
           <li><a href="realisations.html">Réalisations</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact & Devis</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h3>Contact & Infos</h3>
-        <p><i class="fa-solid fa-phone"></i> 06 XX XX XX XX</p>
-        <p><i class="fa-solid fa-envelope"></i> contact@bmf-construction.fr</p>
-        <p><i class="fa-solid fa-location-dot"></i> <strong>Zone :</strong> Oise & Val-d'Oise</p>
-        <div style="margin-top: 1rem;">
-          <p><i class="fa-solid fa-clock"></i> <strong>Horaires :</strong></p>
-          <p style="font-size: 0.9rem; margin-bottom: 0;">Lun - Ven : 09h00 - 18h00</p>
-          <p style="font-size: 0.9rem;">Sam - Dim : Fermé</p>
-        </div>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:0600000000">06 00 00 00 00</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:contact@bmf-construction.fr">contact@bmf-construction.fr</a></p>
+        <p><i class="fa-solid fa-location-dot"></i> Oise (60) & Val-d'Oise (95)</p>
+        <p><i class="fa-solid fa-clock"></i> Lun – Ven : 09h00 – 18h00</p>
       </div>
-
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 BMF Construction — Tous droits réservés.</p>
+      <p><a href="#">Mentions légales</a></p>
     </div>
   </footer>
 
-  <!-- ══ SCRIPT MENU BURGER ══════════════════════════════════ -->
+  <!-- ══ CTA FLOTTANT MOBILE ══════════════════════════════════ -->
+  <a href="contact.html" class="cta-float" aria-label="Demander un devis">
+    <i class="fa-solid fa-envelope"></i>
+    <span>Devis gratuit</span>
+  </a>
+
+  <!-- ══ SCRIPTS ══════════════════════════════════════════════ -->
   <script>
+    /* ── Menu burger ── */
     const burger = document.getElementById('mobile-menu');
     const navLinks = document.getElementById('nav-links');
-
     burger.addEventListener('click', function () {
       navLinks.classList.toggle('active');
       burger.classList.toggle('open');
     });
-
-    // Ferme le menu au clic sur un lien (pratique sur mobile)
     navLinks.querySelectorAll('a').forEach(function(link) {
       link.addEventListener('click', function () {
         navLinks.classList.remove('active');
         burger.classList.remove('open');
       });
+    });
+
+    /* ── Scroll reveal ── */
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    /* ── Compteurs animés ── */
+    function animateCounter(el) {
+      const target = parseInt(el.getAttribute('data-target'));
+      const duration = 1600;
+      const step = target / (duration / 16);
+      let current = 0;
+      const timer = setInterval(function() {
+        current += step;
+        if (current >= target) {
+          el.textContent = target;
+          clearInterval(timer);
+        } else {
+          el.textContent = Math.floor(current);
+        }
+      }, 16);
+    }
+
+    const statsObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.stat-number').forEach(animateCounter);
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const statsBand = document.querySelector('.stats-band');
+    if (statsBand) statsObserver.observe(statsBand);
+
+    /* ── CTA flottant : masqué en haut de page ── */
+    const ctaFloat = document.querySelector('.cta-float');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 400) {
+        ctaFloat.classList.add('visible');
+      } else {
+        ctaFloat.classList.remove('visible');
+      }
     });
   </script>
 
